@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url
+    ><loc>https://bimakshi.me/about</loc
+    ><lastmod>2026-08-29T19:36:44.291Z</lastmod></url
+  ><url
+    ><loc>https://bimakshi.me</loc
+    ><lastmod>2026-08-29T19:36:44.231Z</lastmod></url
+  ><url
+    ><loc>https://bimakshi.me/projects</loc
+    ><lastmod>2026-08-29T19:36:44.221Z</lastmod></url
+  >
+  <url><loc>https://bimakshi.me/projects/durdans-hospital-lims</loc></url
+  ><url><loc>https://bimakshi.me/projects/expenseiq</loc></url
+  ><url><loc>https://bimakshi.me/projects/blognest</loc></url
+  ><url><loc>https://bimakshi.me/projects/battery-vitals</loc></url>
+</urlset>

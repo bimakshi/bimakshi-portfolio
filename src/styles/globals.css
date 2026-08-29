@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  :root {
+    --background: 220 33% 99%;
+    --foreground: 234 24% 12%;
+    --border: 232 18% 88%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Indigo / blue accent palette */
+    --accent-light: 234 82% 62%; /* Lighter shade for hover */
+    --accent: 235 76% 52%;
+    --accent-dark: 236 60% 42%; /* Darker shade for active/focus */
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 230 20% 96%;
+    --muted-foreground: 233 10% 42%;
+  }
+
+  .dark {
+    --background: 234 20% 6%;
+    --foreground: 220 20% 96%;
+    --border: 234 14% 20%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Indigo / blue accent palette */
+    --accent-light: 234 85% 70%; /* Lighter shade for hover */
+    --accent: 235 78% 62%;
+    --accent-dark: 236 58% 50%; /* Darker shade for active/focus */
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 234 12% 15%;
+    --muted-foreground: 230 12% 68%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply min-h-screen bg-background text-foreground;
+
+    /* Improved typography for readability */
+    font-feature-settings: "liga" 1, "calt" 1;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+
+  }
+
+  /* When the JS cursor-follower is active, hide the native cursor on fine pointers */
+  @media (pointer: fine) {
+    .has-custom-cursor,
+    .has-custom-cursor * {
+      cursor: none !important;
+    }
+  }
+
+  .no-cursor {
+    cursor: none;
+  }
+}
