@@ -48,7 +48,7 @@ export default function Hero() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
               <Link
-                href="/resume.pdf"
+                href={hero.resumeUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex h-12 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"

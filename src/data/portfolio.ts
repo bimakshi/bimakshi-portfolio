@@ -14,7 +14,8 @@ export const portfolioData = {
       github: "https://github.com/bimakshi",
       linkedin: "https://linkedin.com/in/bimakshi",
       email: "bimakshigunasekara@gmail.com"
-    }
+    },
+    resumeUrl: "/Bimakshi_Gunasekara_Resume.pdf"
   },
   about: {
     bio: "I'm an IT and Management undergraduate at the University of Moratuwa with hands-on experience across the full stack — from Next.js and TypeScript frontends to Spring Boot backends and PostgreSQL/MySQL databases. I enjoy building real, working systems: from a hospital lab management platform to an expense tracker with live analytics. I'm looking for an internship where I can contribute to real-world projects and keep growing as an engineer.",

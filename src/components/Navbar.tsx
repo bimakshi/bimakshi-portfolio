@@ -4,6 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { Moon, Sun, Menu, X } from "lucide-react"
+import { portfolioData } from "@/data/portfolio"
 
 const NAV_LINKS = [
   { name: "About", href: "#about" },
@@ -38,7 +39,7 @@ export default function Navbar() {
           </nav>
           <div className="flex items-center space-x-2">
             <Link
-              href="/resume.pdf"
+              href={portfolioData.hero.resumeUrl}
               className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               target="_blank"
               rel="noopener noreferrer"
@@ -84,7 +85,9 @@ export default function Navbar() {
             ))}
             <div className="mt-4 flex items-center justify-between px-3">
               <Link
-                href="/resume.pdf"
+                href={portfolioData.hero.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
               >
                 Resume
