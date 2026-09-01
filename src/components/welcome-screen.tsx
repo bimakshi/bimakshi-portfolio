@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-import HeroIllustration from "@/components/hero-illustration";
+import ProfilePhoto from "@/components/profile-photo";
 
 export default function WelcomeScreen({
   onFinished,
@@ -226,7 +226,7 @@ export default function WelcomeScreen({
               variants={itemVariants}
               className="mb-6 flex justify-center"
             >
-              <HeroIllustration className="w-40 text-accent sm:w-52" />
+              <ProfilePhoto size="welcome" />
             </motion.div>
 
             {/* Main Title */}

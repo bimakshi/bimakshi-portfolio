@@ -22,6 +22,7 @@ export interface ReferenceItem {
 
 export const PROFILE = {
   name: "Bimakshi Gunasekara",
+  image: "/static/profile.jpeg",
   title: "Software Engineering Intern",
   location: "Gampaha, Sri Lanka",
   email: "bimakshigunasekara@gmail.com",

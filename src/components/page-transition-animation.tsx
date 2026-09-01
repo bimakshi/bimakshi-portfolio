@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 
-import HeroIllustration from "@/components/hero-illustration";
+import ProfilePhoto from "@/components/profile-photo";
 
 export default function PageTransitionAnimation() {
   const prefersReducedMotion = useReducedMotion();
@@ -56,13 +56,13 @@ export default function PageTransitionAnimation() {
       >
         {/* Simple centered mark - no blur, no rotation */}
         <motion.div
-          className="h-24 w-24 rounded-2xl bg-background/10 p-2"
+          className="flex items-center justify-center"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.8, opacity: 0 }}
           transition={{ duration: 0.25, ease: "easeOut" }}
         >
-          <HeroIllustration className="h-full w-full text-background" />
+          <ProfilePhoto size="xs" variant="onAccent" />
         </motion.div>
       </motion.div>
     );
@@ -83,7 +83,7 @@ export default function PageTransitionAnimation() {
           clipPath: { duration: 0.8 },
         }}
       >
-        {/* Central star logo */}
+        {/* Central profile photo */}
         <motion.div
           className="flex items-center justify-center"
           initial={{ scale: 0, rotate: -180, opacity: 0 }}
@@ -99,12 +99,12 @@ export default function PageTransitionAnimation() {
           }}
         >
           <motion.div
-            className="flex h-32 w-32 items-center justify-center rounded-3xl bg-background/10 p-3 backdrop-blur-xl will-change-transform"
+            className="will-change-transform"
             style={{ transformOrigin: "50% 50%" }}
             animate={{ scale: [1, 1.06, 1] }}
             transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
           >
-            <HeroIllustration className="h-full w-full text-background drop-shadow-lg" />
+            <ProfilePhoto size="transition" variant="onAccent" />
           </motion.div>
         </motion.div>
 

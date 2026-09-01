@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useTheme } from "next-themes";
 
 import FadeUp from "@/animation/fade-up";
-import HeroIllustration from "@/components/hero-illustration";
+import ProfilePhoto from "@/components/profile-photo";
 
 export default function LandingHero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -153,9 +153,9 @@ export default function LandingHero() {
             </AnimatePresence>
            </div>
 
-           <FadeUp key="hero-illustration" duration={0.6} delay={0.3} whileInView={true}>
-             <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
-               <HeroIllustration className="w-full text-accent" />
+           <FadeUp key="hero-profile-photo" duration={0.6} delay={0.3} whileInView={true}>
+             <div className="flex w-full justify-center">
+               <ProfilePhoto size="lg" />
              </div>
            </FadeUp>
           </div>

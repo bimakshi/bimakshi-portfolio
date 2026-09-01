@@ -224,7 +224,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
               <ImageIcon className="h-5 w-5" /> Screens
             </h2>
             <div className="mt-4 overflow-hidden rounded-2xl border border-accent/15 bg-muted/20">
-              <Corosel images={project.gallery} aspectRatio={1.6} />
+              <Corosel images={project.gallery} />
             </div>
           </section>
         )}

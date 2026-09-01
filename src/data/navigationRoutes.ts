@@ -6,7 +6,7 @@ export const routes: NavbarRoutes = [
   { title: "Projects", href: "/projects" },
   {
     title: "Resume",
-    href: "/Bimakshi_Gunasekara_Resume.pdf",
+    href: "/Bimakshi_Gunasekara_Public_Resume.pdf",
     external: true,
   },
 ];

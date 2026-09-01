@@ -68,9 +68,17 @@ export const PROJECTS: Project[] = [
       ],
     },
     gallery: [
-      "/images/projects/durdans-hospital-lims/orders.png",
-      "/images/projects/durdans-hospital-lims/billing.png",
-      "/images/projects/durdans-hospital-lims/samples.png",
+      "/images/projects/durdans-hospital-lims/Create Order.png",
+      "/images/projects/durdans-hospital-lims/Orders.png",
+      "/images/projects/durdans-hospital-lims/Order Summary.png",
+      "/images/projects/durdans-hospital-lims/Bills.png",
+      "/images/projects/durdans-hospital-lims/Record Payment.png",
+      "/images/projects/durdans-hospital-lims/Payment serach.png",
+      "/images/projects/durdans-hospital-lims/Sample Collection.png",
+      "/images/projects/durdans-hospital-lims/Collection history.png",
+      "/images/projects/durdans-hospital-lims/Label Print.png",
+      "/images/projects/durdans-hospital-lims/Supplies.png",
+      "/images/projects/durdans-hospital-lims/Tests.png",
     ],
   },
   {
@@ -139,6 +147,12 @@ export const PROJECTS: Project[] = [
     links: {
       repos: [{ label: "Repository", url: "https://github.com/bimakshi/blognest" }],
     },
+    gallery: [
+      "/images/projects/blogNest/home.png",
+      "/images/projects/blogNest/explore.png",
+      "/images/projects/blogNest/myblogs.png",
+      "/images/projects/blogNest/recent.png",
+    ],
   },
   {
     slug: "battery-vitals",
