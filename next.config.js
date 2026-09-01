@@ -12,7 +12,13 @@ const nextConfig = withBundleAnalyzer({
   reactStrictMode: true,
   pageExtensions: ["ts", "tsx", "js"],
   images: {
-    domains: ["flagcdn.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "flagcdn.com",
+        pathname: "/**",
+      },
+    ],
   },
   async headers() {
     return [

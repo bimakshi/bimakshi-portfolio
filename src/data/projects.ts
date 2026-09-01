@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
     },
     gallery: [
       "/images/projects/durdans-hospital-lims/Create Order.png",
-      "/images/projects/durdans-hospital-lims/Orders.png",
+      "/images/projects/durdans-hospital-lims/orders.png",
       "/images/projects/durdans-hospital-lims/Order Summary.png",
       "/images/projects/durdans-hospital-lims/Bills.png",
       "/images/projects/durdans-hospital-lims/Record Payment.png",
@@ -145,7 +145,7 @@ export const PROJECTS: Project[] = [
     ],
     // TODO: replace with real URLs.
     links: {
-      repos: [{ label: "Repository", url: "https://github.com/bimakshi/blognest" }],
+      repos: [{ label: "Repository", url: "https://github.com/bimakshi/Blog_App" }],
     },
     gallery: [
       "/images/projects/blogNest/home.png",

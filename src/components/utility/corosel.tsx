@@ -37,6 +37,14 @@ const swipePower = (offset: number, velocity: number) => {
   return Math.abs(offset) * velocity;
 };
 
+/** Encode each path segment so spaces and special chars work on Linux hosts. */
+function encodePublicPath(path: string): string {
+  return path
+    .split("/")
+    .map((segment) => (segment ? encodeURIComponent(segment) : segment))
+    .join("/");
+}
+
 export type CoroselProps = {
   aspectRatio?: number;
   images: string[];
@@ -67,7 +75,7 @@ function useImageAspectRatios(srcs: string[], fallback: number) {
           }));
         }
       };
-      img.src = src;
+      img.src = encodePublicPath(src);
 
       controllers.push(() => {
         cancelled = true;
@@ -124,7 +132,7 @@ export default function Corosel({ aspectRatio = 1.6, images }: CoroselProps) {
           draggable={false}
           alt={`Project screenshot ${imageIndex + 1} of ${images.length}`}
           className="absolute inset-0 h-full w-full object-contain"
-          src={images[imageIndex]}
+          src={encodePublicPath(images[imageIndex])}
           custom={direction}
           variants={variant}
           initial="enter"
