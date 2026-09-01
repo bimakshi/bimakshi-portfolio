@@ -71,7 +71,6 @@ export const PROJECTS: Project[] = [
       "/images/projects/durdans-hospital-lims/Create Order.png",
       "/images/projects/durdans-hospital-lims/Tests.png",
       "/images/projects/durdans-hospital-lims/Order Summary.png",
-      "/images/projects/durdans-hospital-lims/Orders.png",
       "/images/projects/durdans-hospital-lims/Record Payment.png",
       "/images/projects/durdans-hospital-lims/Payment serach.png",
       "/images/projects/durdans-hospital-lims/Bills.png",
