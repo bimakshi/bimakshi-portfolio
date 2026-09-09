@@ -109,7 +109,6 @@ export const PROJECTS: Project[] = [
     ],
     links: {
       repos: [{ label: "Repository", url: "https://github.com/bimakshi/expenseiq" }],
-      live: "https://expenseiq.bimakshi.me",
       articles: [
         {
           title: "Building ExpenseIQ: budgets and alerts with Prisma + Recharts",
