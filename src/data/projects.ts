@@ -60,11 +60,9 @@ export const PROJECTS: Project[] = [
       "Owned a full vertical slice of the product, from database schema to UI.",
       "Worked within a microservices architecture with shared authentication via Keycloak.",
     ],
-    // TODO: replace with real URLs.
     links: {
       repos: [
-        { label: "Frontend", url: "https://github.com/bimakshi/durdans-lims-web" },
-        { label: "Orders Service", url: "https://github.com/bimakshi/durdans-lims-orders" },
+        { label: "Repository", url: "https://github.com/bimakshi/durdans-lims" },
       ],
     },
     gallery: [
@@ -109,7 +107,6 @@ export const PROJECTS: Project[] = [
       "End-to-end ownership: data model, API, auth, and dashboard UI.",
       "Type-safe database layer with Prisma across the whole app.",
     ],
-    // TODO: replace with real URLs.
     links: {
       repos: [{ label: "Repository", url: "https://github.com/bimakshi/expenseiq" }],
       live: "https://expenseiq.bimakshi.me",
@@ -142,7 +139,6 @@ export const PROJECTS: Project[] = [
       "Security-first build: CSRF tokens, sanitization, and session hardening.",
       "No framework: direct PHP and SQL, to understand what frameworks abstract away.",
     ],
-    // TODO: replace with real URLs.
     links: {
       repos: [{ label: "Repository", url: "https://github.com/bimakshi/Blog_App" }],
     },
@@ -175,7 +171,9 @@ export const PROJECTS: Project[] = [
       "Worked close to the hardware: ADC wiring, sampling, and control loops.",
       "Streamed live telemetry to a web dashboard for analysis.",
     ],
-    links: {},
+    links: {
+      repos: [{ label: "Repository", url: "https://github.com/bimakshi/BatteryVitals" }],
+    },
   },
 ];
 
